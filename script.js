@@ -31,7 +31,7 @@ function handleIntroImg() {
   }
 }
 
-function handleSubMenu(index) {
+function handleClickSubMenu(index) {
   dropdown[index].classList.toggle('ativo');
 }
 
@@ -45,6 +45,12 @@ function outside(event) {
 
 hamburguer.addEventListener('click', handleSidebar);
 
+subMenu.forEach((eachSubMenu, index) => {
+  eachSubMenu.addEventListener('click', () => {
+    handleClickSubMenu(index);
+  });
+});
+
 events.forEach((event) => {
   window.addEventListener(event, () => {
     handleIntroImg();
@@ -57,12 +63,6 @@ window.addEventListener('resize', () => {
   defineOverflow();
 });
 
-subMenu.forEach((eachSubMenu, index) => {
-  eachSubMenu.addEventListener('click', () => {
-    handleSubMenu(index);
-  });
-});
-
 window.addEventListener('click', () => {
-  outside();
+  outside(event);
 });
