@@ -1,0 +1,2 @@
+fechar o navbar clicando fora
+declarar classes e width no escopo global

@@ -8,49 +8,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="hamburguer">
+    <div class="lines">
+      <div id="line-1"></div>
+      <div id="line-2"></div>
+      <div id="line-3"></div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="logo-wrapper">
+      <img src="./img/logo.svg" alt="Logo image">
+    </div>
+    <nav class="navbar">
+      <div class="menu-wrapper">
+        <div class="menu">
+          <ul>
+            <li class="feat"><a class="open-menu">Features<img src="./img/icon-arrow-down.svg" alt="Arrow down icon" class="arrow"></a>
+              <ul class="dropdown-menu menu-opened">
+                <li><a href=""><img src="./img/icon-todo.svg" alt="Todo icon">Todo List</li></a>
+                <li><a href=""><img src="./img/icon-calendar.svg" alt="Calendar icon">Calendar</li></a>
+                <li><a href=""><img src="./img/icon-reminders.svg" alt="Reminder icon">Reminders</li></a>
+                <li><a href=""><img src="./img/icon-planning.svg" alt="Planning icon">Planning</li></a>
+              </ul>
+            </li>
+            <li class="comp"><a class="open-menu">Company<img src="./img/icon-arrow-down.svg" alt="Arrow down icon" class="arrow"></a>
+              <ul class="dropdown-menu menu-opened">
+                <li><a href="">History</li></a>
+                <li><a href="">Our Team</li></a>
+                <li><a href="">Blog</li></a>
+              </ul>
+            </li>
+            <li class="careers"><a href="">Careers</a></li>
+            <li class="about"><a href="">About</a></li>
+          </ul>
+        </div>
+        <div class="btns">
+          <button id="login"><a href="">Login</a></button>
+          <button id="register"><a  href="">Register</a></button>
+        </div>
+      </div>
+    </nav>
+  </header>
   <main>
-    <header class="header">
-      <div class="logo-wrapper">
-        <img src="./img/logo.svg" alt="Logo image">
-      </div>
-      <nav class="navbar">
-        <div class="menu-wrapper">
-          <div class="menu">
-            <ul>
-              <li class="feat"><a class="open-menu">Features<img src="./img/icon-arrow-down.svg" alt="Arrow down icon" class="arrow"></a>
-                <ul class="dropdown-menu menu-opened">
-                  <li><a href=""><img src="./img/icon-todo.svg" alt="Todo icon">Todo List</li></a>
-                  <li><a href=""><img src="./img/icon-calendar.svg" alt="Calendar icon">Calendar</li></a>
-                  <li><a href=""><img src="./img/icon-reminders.svg" alt="Reminder icon">Reminders</li></a>
-                  <li><a href=""><img src="./img/icon-planning.svg" alt="Planning icon">Planning</li></a>
-                </ul>
-              </li>
-              <li class="comp"><a class="open-menu">Company<img src="./img/icon-arrow-down.svg" alt="Arrow down icon" class="arrow"></a>
-                <ul class="dropdown-menu menu-opened">
-                  <li><a href="">History</li></a>
-                  <li><a href="">Our Team</li></a>
-                  <li><a href="">Blog</li></a>
-                </ul>
-              </li>
-              <li class="careers"><a href="">Careers</a></li>
-              <li class="about"><a href="">About</a></li>
-            </ul>
-          </div>
-          <div class="btns">
-            <button id="login"><a href="">Login</a></button>
-            <button id="register"><a  href="">Register</a></button>
-          </div>
-        </div>
-      </nav>
-      <div class="hamburguer">
-        <div class="lines">
-          <div id="line-1"></div>
-          <div id="line-2"></div>
-          <div id="line-3"></div>
-        </div>
-      </div>
-    </header>
-
     <div class="intro">
       <div class="intro-img-wrapper">
         <img src="./img/image-hero-mobile.png" alt="Decoration image">
@@ -72,76 +71,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snap</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main>
-    <header class="header">
-      <div class="logo-wrapper">
-        <img src="./img/logo.svg" alt="Logo image">
-      </div>
-      <nav class="navbar">
-        <div class="menu-wrapper">
-          <ul class="menu">
-            <li>
-              <ul class="features">Features<img src="./img/icon-arrow-down.svg" alt="Arrow down icon" class="arrow">
-                <li><img src="./img/icon-todo.svg" alt="Todo icon">Todo List</li>
-                <li><img src="./img/icon-calendar.svg" alt="Calendar icon">Calendar</li>
-                <li><img src="./img/icon-reminders.svg" alt="Reminder icon">Reminders</li>
-                <li><img src="./img/icon-planning.svg" alt="Planning icon">Planning</li>
-              </ul>
-            </li>
-            <li>
-              <ul class="company">Company<img src="./img/icon-arrow-down.svg" alt="Arrow down icon" class="arrow">
-                <li>History</li>
-                <li>Our Team</li>
-                <li>Blog</li>
-              </ul>
-            </li>
-            <li class="careers">Careers</li>
-            <li class="about">About</li>
-          </ul>
-          <div class="btns">
-            <button id="login">Login</button>
-            <button id="register">Register</button>
-          </div>
-        </div>
-      </nav>
-      <div class="hamburguer">
-        <div class="lines">
-          <div id="line-1"></div>
-          <div id="line-2"></div>
-          <div id="line-3"></div>
-        </div>
-      </div>
-    </header>
-
-    <div class="intro">
-      <div class="intro-img-wrapper">
-        <img src="./img/image-hero-mobile.png" alt="Decoration image">
-      </div>
-      <section class="information">
-        <div class="information-wrapper">
-          <h1>Make<br id="br"> remote work</h1>
-          <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-          <a href="" target="_blank"><button>Learn more</button></a>
-        </div>
-        <div class="client-wrapper">
-          <div class="client">
-            <img src="./img/client-databiz.svg" alt="Databiz logo"><img src="./img/client-audiophile.svg" alt="Audiophile logo"><img src="./img/client-meet.svg" alt="Meet logo"><img src="./img/client-maker.svg" alt="Maker logo">
-          </div>
-        </div>
-      </section>
-    </div>
-  </main>
-  <script src="script.js"></script>
-</body>
-</html> -->

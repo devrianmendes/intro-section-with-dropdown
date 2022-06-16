@@ -33,12 +33,16 @@ function handleIntroImg() {
 
 function handleClickSubMenu(index) {
   dropdown[index].classList.toggle('ativo');
+  subMenu[index].classList.toggle('ativo');
 }
 
 function outside(event) {
   if (!event.target.classList.contains('open-menu')) {
     dropdown.forEach((eachDropdown) => {
       eachDropdown.classList.remove('ativo');
+    });
+    subMenu.forEach((eachSubMenu) => {
+      eachSubMenu.classList.remove('ativo');
     });
   }
 }
@@ -61,6 +65,14 @@ events.forEach((event) => {
 window.addEventListener('resize', () => {
   handleIntroImg();
   defineOverflow();
+  const classes = [hamburguer, main, sidebar];
+  const width = window.innerWidth;
+
+  if (width > 991) {
+    classes.forEach((element) => {
+      element.classList.remove('ativo');
+    });
+  }
 });
 
 window.addEventListener('click', () => {
