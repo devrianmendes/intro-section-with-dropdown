@@ -1,2 +1,1 @@
-fechar o navbar clicando fora
-declarar classes e width no escopo global
+colocar os foreach em constantes pra não ficar repetindo toda hora
